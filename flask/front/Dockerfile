@@ -2,10 +2,10 @@
 FROM node:13.12.0-alpine
 
 # set working directory
-WORKDIR /demo-app-react-flask
+WORKDIR /front
 
 # add `/app/node_modules/.bin` to $PATH
-ENV PATH /demo-app-react-flask/node_modules/.bin:$PATH
+ENV PATH /front/node_modules/.bin:$PATH
 
 # install app dependencies
 COPY package.json ./
